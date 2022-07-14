@@ -1,5 +1,5 @@
 {
-  "name": "integration-test-fe",
+  "name": "testing-fe",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,8 +13,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start-cy": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test-jest": "jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -34,5 +36,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@cypress/react": "^6.0.0",
+    "@cypress/webpack-dev-server": "^2.0.0",
+    "cypress": "^10.3.0",
+    "jest": "^28.1.3"
   }
 }
