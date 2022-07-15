@@ -22,6 +22,7 @@ code {
 }
 
 .action-submit {
+  width: auto;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -32,8 +33,31 @@ code {
   width: 500px;
   padding: 5px;
   background-color: #45aaf2;
+  border-radius: 5px;
 }
 
 .item:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.btn {
+  outline: none;
+  padding: 5px;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background-color: #20bf6b;
+}
+
+.btn.danger {
+  background-color: #eb3b5a;
 }
